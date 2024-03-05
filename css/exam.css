@@ -1,0 +1,102 @@
+/*Marlena Branham; GSI:Maryam*/
+
+a.skip {
+    position: absolute;
+    left: -1000px;
+    background-color: white;
+    height: 25px;
+    z-index: 100;
+}
+
+a.skip:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+/* VIEW #1:DEFUALT/MOBILE VIEW
+@media screen and (min-width:400px) {
+.gallery {
+    width: 80%;
+    margin: 0 auto;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+}
+
+/*VIEW #2: 600px BREAKPOINT */
+/* @media screen and (min-width:600px) {
+    .gallery {
+        width: 80%;
+        margin: 0 auto;
+        background-color: purple;
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: space-around;
+        align-items: end;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery img:nth-child(4n) {
+       grid-column: 1 / -1;
+    }
+} */
+
+/*VIEW #3: 800px BREAKPOINT */
+/* @media screen and (min-width:800px) {
+    .gallery {
+        width: 80%;
+        margin: 0 auto;
+        background-color: pink;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: start;
+        align-items: end;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery img:nth-child(4n) {
+       grid-column: 1 / -1;
+    }
+} */
+
+/*VIEW #4: 900px BREAKPOINT */
+@media screen and (min-width:900px) {
+    .gallery {
+        width: 80%;
+        margin: 0 auto;
+        background-color: orange;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+        grid-column: span 2;
+    }
+
+    .gallery img:nth-child(3n) {
+       grid-column-start: 2;
+    }
+}
